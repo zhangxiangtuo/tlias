@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zxt.entity.Emp;
 import com.zxt.service.EmpService;
 import com.zxt.mapper.EmpMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 * @createDate 2024-01-14 15:39:57
 */
 @Service
+@Slf4j
 public class EmpServiceImpl extends ServiceImpl<EmpMapper, Emp>
     implements EmpService{
 

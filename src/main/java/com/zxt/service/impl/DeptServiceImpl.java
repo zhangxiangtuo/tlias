@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zxt.entity.Dept;
 import com.zxt.service.DeptService;
 import com.zxt.mapper.DeptMapper;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Service;
 * @createDate 2024-01-14 15:39:57
 */
 @Service
+@Slf4j
 public class DeptServiceImpl extends ServiceImpl<DeptMapper, Dept>
     implements DeptService{
 
